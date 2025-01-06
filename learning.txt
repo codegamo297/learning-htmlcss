@@ -1,0 +1,29 @@
+1. CSS Selector
+1.1 Simple Selector
+    #user {
+        background-color: #f2f2f2;
+    }
+    .header {
+        background-color: #f2f2f2;
+    }
+1.2 Combinator selectors
+1.2.1 Descendant combinator (space)
+    div p {
+        color: blue;
+    }
+    - Bộ chọn này chọn tất cả thẻ p nằm trong p cho dù nó là con trực tiếp hay là gián tiếp
+1.2.2 Child combinator (>)
+    div > p {
+        color: blue;
+    }
+    - Bộ chọn này chọn tất cả thẻ p là con trực tiếp của div
+1.2.3 Next sibling combinator (+)
+    div + p {
+        color: blue;
+    }
+    - Bộ chọn này chọn thẻ p cùng cấp với div nằm liền sau div
+1.2.4 Subsequent-sibling combinator (~)
+    div ~ p {
+        color: blue;
+    }
+    - Bộ chọn này chọn tất cả thẻ p cùng cấp với div nằm liền sau div
