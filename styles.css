@@ -9,51 +9,29 @@ a {
     color: #000;
 }
 
-li {
-    list-style: none;
-}
-
-.nav {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-}
-
-.nav li {
+.menu {
+    background-color: #ccc;
     position: relative;
 }
 
-.nav li:hover > .sub-menu {
+.menu a {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.menu-item:hover .sub-menu {
     display: block;
 }
 
-.nav .dropdown-link {
-    display: block;
-    text-transform: uppercase;
-    padding: 6px 10px;
+.menu-item {
+    display: inline-block;
 }
 
 .sub-menu {
     position: absolute;
-    top: 24px;
+    right: 0;
     left: 0;
-    width: 240px;
+    padding: 20px;
     background-color: #ddd;
-    color: #333;
     display: none;
-}
-
-.sub-menu li:hover {
-    background-color: #ccc;
-}
-
-.sub-menu a {
-    display: block;
-    padding: 10px 20px;
-    border-bottom: 1px solid #333;
-}
-
-.sub-menu .sub-menu {
-    top: 0;
-    left: 100%;
 }
