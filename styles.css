@@ -19,11 +19,11 @@ li {
     gap: 24px;
 }
 
-.nav .dropdown {
+.nav li {
     position: relative;
 }
 
-.nav .dropdown:hover .sub-menu {
+.nav li:hover > .sub-menu {
     display: block;
 }
 
@@ -51,4 +51,9 @@ li {
     display: block;
     padding: 10px 20px;
     border-bottom: 1px solid #333;
+}
+
+.sub-menu .sub-menu {
+    top: 0;
+    left: 100%;
 }
