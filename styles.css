@@ -4,34 +4,44 @@
     box-sizing: border-box;
 }
 
-a {
-    text-decoration: none;
-    color: #000;
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1.6rem;
+    line-height: 1.5;
 }
 
 .menu {
-    background-color: #ccc;
-    position: relative;
+    background: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.menu li {
+    display: inline-block;
 }
 
 .menu a {
+    color: #fff;
+    text-decoration: none;
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px 16px 12px;
 }
 
-.menu-item:hover .sub-menu {
-    display: block;
+h1.title {
+    margin-top: 46px;
 }
 
-.menu-item {
-    display: inline-block;
+.content {
+    padding: 16px;
 }
 
-.sub-menu {
-    position: absolute;
-    right: 0;
-    left: 0;
-    padding: 20px;
-    background-color: #ddd;
-    display: none;
+.content p {
+    margin: 16px 0;
 }
