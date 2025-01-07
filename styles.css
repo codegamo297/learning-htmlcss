@@ -9,39 +9,63 @@ html {
 }
 
 body {
-    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 1.6rem;
-    line-height: 1.5;
-}
-
-.menu {
-    background: #333;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-}
-
-.menu li {
-    display: inline-block;
-}
-
-.menu a {
-    color: #fff;
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px 16px 12px;
-}
-
-h1.title {
-    margin-top: 46px;
+    font-family: "Montserrat", sans-serif;
 }
 
 .content {
-    padding: 16px;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 24px;
+    line-height: 1.5;
+}
+
+.content h1 {
+    font-size: 3.2rem;
 }
 
 .content p {
     margin: 16px 0;
+    font-size: 1.8rem;
+}
+
+.content img {
+    max-width: 100%;
+}
+
+/* Modal */
+.modal {
+    display: flex;
+
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal .body {
+    margin: auto;
+    width: 400px;
+    position: relative;
+}
+
+.modal .body img {
+    width: 100%;
+}
+
+.modal .body button {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.modal .body button:hover {
+    opacity: 0.8;
 }
