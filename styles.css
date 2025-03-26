@@ -3,27 +3,50 @@
     padding: 0;
 }
 
-.box {
-    position: relative;
-    width: 400px;
-    height: 300px;
-    border: 4px dashed #333;
-    margin: 100px auto 0;
+.main-1 {
+    counter-reset: count;
 }
 
-.result {
-    position: absolute;
-    width: 400px;
-    height: 300px;
-    background-color: #191d1e;
-    mix-blend-mode: difference;
+.title-2::before {
+    counter-increment: count;
+    content: "Section " counter(count) ": ";
 }
 
-.circle {
-    /* margin-top: 8px;
-    margin-left: 8px; */
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background: #a174ff;
+.main-2 {
+    counter-reset: count;
+}
+
+.section-2 {
+    counter-reset: count;
+}
+
+.section-2::before {
+    counter-increment: count;
+    content: "Section " counter(count) ": ";
+}
+
+.section-3::before {
+    counter-increment: count;
+    content: "Section 1-" counter(count) ": ";
+}
+
+body {
+    counter-reset: heading;
+}
+
+h2 {
+    counter-increment: heading;
+    counter-reset: heading-2;
+}
+
+h2::before {
+    content: counter(heading) " - ";
+}
+
+h3 {
+    counter-increment: heading-2;
+}
+
+h3::before {
+    content: counter(heading) " - " counter(heading-2) " - ";
 }
