@@ -3,50 +3,14 @@
     padding: 0;
 }
 
-.main-1 {
-    counter-reset: count;
-}
-
-.title-2::before {
-    counter-increment: count;
-    content: "Section " counter(count) ": ";
-}
-
-.main-2 {
-    counter-reset: count;
-}
-
-.section-2 {
-    counter-reset: count;
-}
-
-.section-2::before {
-    counter-increment: count;
-    content: "Section " counter(count) ": ";
-}
-
-.section-3::before {
-    counter-increment: count;
-    content: "Section 1-" counter(count) ": ";
-}
-
-body {
-    counter-reset: heading;
-}
-
-h2 {
-    counter-increment: heading;
-    counter-reset: heading-2;
-}
-
-h2::before {
-    content: counter(heading) " - ";
-}
-
-h3 {
-    counter-increment: heading-2;
-}
-
-h3::before {
-    content: counter(heading) " - " counter(heading-2) " - ";
+.box {
+    width: 200px;
+    height: 200px;
+    margin: 50px auto 0;
+    /* background: url("https://bennettfeely.com/clippy/pics/pittsburgh.jpg") */
+    background: orange center / cover;
+    /* border-radius: 50%; */
+    /* clip-path: circle(); */
+    /* clip-path: inset(10px 20px round 10px 20px); */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%);
 }
